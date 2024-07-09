@@ -18,16 +18,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 			contactToDelete:{}
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
-
 			seeContact: (contact) => {
 				setStore({contact:contact})
 			},
@@ -56,7 +46,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			createAgenda: () =>{
-				// console.log(fullName,email,address,phone);
 			
 				fetch ('https://playground.4geeks.com/contact/agendas/Ruperth', {
 					method: "POST",

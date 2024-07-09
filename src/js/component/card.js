@@ -1,10 +1,10 @@
 import React from "react";
-import './Card.css'; // Asegúrate de importar el archivo CSS
+import './Card.css';
 
 export const Card = (props) => {
 
     const handleDeleteClick = () => {
-        // Lógica para manejar la eliminación
+
         if (props.onDelete) {
             props.onDelete(props.id);
         }
